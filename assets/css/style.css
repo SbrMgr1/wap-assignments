@@ -21,3 +21,21 @@
 .make-bold{
 	font-weight: 600
 }
+.mb-30{
+	margin-bottom: 30px
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.pt-30{
+	padding-top: 30px
+}
+.pt-15{
+	padding-top: 15px
+}

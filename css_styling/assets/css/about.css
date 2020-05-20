@@ -1,7 +1,15 @@
 .about-bg{
-	background: #006b00;
+	background: #564a3c;
 	color: #ffffff;
 }
 a:visited{
 	color: #0f0;
 }
+.w-50{
+	width: 50%;
+}
+.w-300-px{
+	width: 300px;
+	height: 300px;
+}
+
