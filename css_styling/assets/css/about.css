@@ -5,6 +5,12 @@
 a:visited{
 	color: #00daff;
 }
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
 .w-50{
 	width: 50%;
 }
