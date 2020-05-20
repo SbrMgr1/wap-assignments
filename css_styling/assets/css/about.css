@@ -21,4 +21,8 @@ a:hover{
 p::first-letter{
 	font-size: 1.5em;
 }
+span.make-indent{
+	display: inline-block;
+    text-indent: 50px;
+}
 
