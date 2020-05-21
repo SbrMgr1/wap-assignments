@@ -19,6 +19,9 @@
 .mt-10{
 	margin-top: 10px;
 }
+.mb-5{
+	margin-bottom: 5px;
+}
 .mb-10{
 	margin-bottom: 10px;
 }
@@ -77,4 +80,7 @@
 }
 .bg-highlight{
 	background: #ffffb4;
+}
+.text-center{
+	text-align: center;
 }

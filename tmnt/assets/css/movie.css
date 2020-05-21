@@ -1,0 +1,104 @@
+*{
+	font-family: Verdana, Tahoma, sans-serif;
+}
+.main-bg{
+	background-image: url("./../skeleton_files/background.png");
+	background-repeat: repeat;
+}
+.banner-bg{
+	background-image: url("./../skeleton_files/bannerbg.png");
+	background-repeat: repeat-x;
+	text-align: center;
+}
+.tmnt-title{
+	text-shadow: 3px 3px #999999;
+}
+.main-content{
+	width: 800px;
+	margin: auto;
+	border: 4px gray solid;
+	border-radius: 20px;
+	position: relative;
+	
+}
+.inner-container{
+	display: table;
+}
+.left-aside{
+	width: 550px;
+	display: table-cell;
+	vertical-align: top;
+}
+.left-aside section:first-child{
+	background-image: url("./../skeleton_files/rbg.png");
+	background-repeat: repeat-x;
+	border-radius: 17px 0px 0px 0px;
+}
+.left-aside>section:first-child img{
+	border-radius: 17px 0px 0px 0px;
+}
+.right-nav{
+	width: 250px;
+	border-radius: 0px 17px 0px 0px;
+	font-size: 8pt;
+	font-family: Arial,sans-serif;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.right-bg{
+	background: #A2B964;
+}
+.right-nav img:first-child{
+	border-radius: 0px 17px 0px 0px;
+}
+.right-nav .desc{
+	padding: 10px;
+	height: 100%;
+}
+.rating-txt{
+	font-size: 48pt;
+    font-weight: bold;
+    vertical-align: top;
+    color: #f00;
+}
+.left-column{
+	width: 47%;
+	margin-left: 2%;
+	float: left;
+}
+.comment-box{
+	border: 2px solid gray;
+	border-radius: 10px;
+	font-size: 8pt;
+	font-weight: bold;
+	background: #E8DC9B;
+	padding:8px;
+	min-height: 24px;
+}
+.txt-img{
+	float: left;
+    margin-right: 5px;
+}
+.cretic{
+	font-size: 8pt;
+}
+.cretic-name{
+	font-style: italic;
+}
+.reviews-space{
+	margin-bottom: 20pt;
+}
+.desc dl dt{
+	font-weight: bold;
+}
+.desc dl dd{
+	margin-left: 20px;
+	margin-bottom: 10pt;
+}
+.validator-section{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
