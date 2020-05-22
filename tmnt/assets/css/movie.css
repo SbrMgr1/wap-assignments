@@ -29,12 +29,12 @@
 	display: table-cell;
 	vertical-align: top;
 }
-.left-aside section:first-child{
+.left-aside div:first-child{
 	background-image: url("./../skeleton_files/rbg.png");
 	background-repeat: repeat-x;
 	border-radius: 17px 0px 0px 0px;
 }
-.left-aside>section:first-child img{
+.left-aside>div:first-child img{
 	border-radius: 17px 0px 0px 0px;
 }
 .right-nav{
