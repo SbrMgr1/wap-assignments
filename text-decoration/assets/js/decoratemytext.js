@@ -7,7 +7,7 @@ function showAlert(){
 	let fontSize = window.getComputedStyle(textarea, null).getPropertyValue('font-size');//this gives value in it whatever we set the font-size unit
 	console.log(fontSize)
 	fontSizeVal = parseInt(parseInt(fontSize)* 0.75);// px to pt
-	if(interval == undefined){// to avoid running of double click of button
+	if(interval == undefined){// to avoid to run multiple setInterval when user click button more than one time
 		interval = setInterval(function(){
 			console.log('here'+fontSizeVal);
 			fontSizeVal = parseInt(fontSizeVal)+2;
