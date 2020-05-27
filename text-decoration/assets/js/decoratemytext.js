@@ -1,7 +1,7 @@
 var interval;
 function showAlert(){
 
-	// alert("Hello, world!");
+	alert("Hello, world!");
 	let textarea = document.getElementById('text-field');
 
 	let fontSize = window.getComputedStyle(textarea, null).getPropertyValue('font-size');//this gives value in it whatever we set the font-size unit
