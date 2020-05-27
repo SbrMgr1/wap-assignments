@@ -16,6 +16,7 @@
 				var subtotalElem = document.getElementById('subtotal');
 				var tipElem = document.getElementById('tip');
 				var totalElem = document.getElementById('total');
+
 				if(subtotalElem.value.match('^[0-9.]{1,}$') == null || tipElem.value.match('^[0-9.]{1,}$') == null){
 					alert("Invalid Input");
 				}else{
@@ -23,10 +24,8 @@
 					var tip = parseFloat(tipElem.value)*subtotal/100;
 					var total = subtotal + tip;
 					totalElem.innerHTML = '$' + total;
-				}
-				
+				}				
 			}
-
 		</script>
 	</head>
 	<body>
