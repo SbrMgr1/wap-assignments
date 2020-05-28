@@ -1,6 +1,7 @@
 var animating = "";
 var speed = 250;
 var cnt = 0;
+var animation_txt = '';
 var doAnimation = function(animation_txt){
 	var animations = animation_txt.split("=====\n");
 	
@@ -19,7 +20,7 @@ function isTurboChecked(){
 }
 window.onload = function(){
 
-	var animation_txt = '';
+	
 	document.getElementById('animation-option').onchange = function(){
 		animation_txt = ANIMATIONS[this.value.toUpperCase()];
 		document.querySelector('[name="field-area"]').value = animation_txt;
@@ -70,6 +71,9 @@ window.onload = function(){
 	}
 	document.getElementById('size-option').onchange = function(){
 		document.querySelector('[name="field-area"]').style.fontSize = this.value;
+	}
+	document.querySelector('[name="field-area"]').onchange = function(){
+		animation_txt = this.value;
 	}
 
 
