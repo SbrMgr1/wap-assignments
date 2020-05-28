@@ -1,0 +1,37 @@
+*{
+	font-family: sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+
+}
+h1{
+	font-size: 32pt;
+	margin-bottom: 0 ! important;
+	text-align: center;
+	padding: 0 ! important;
+}
+body{
+	text-align: center;
+	background: #CCCCFF
+}
+[name="field-area"]{
+	width: 90%;
+	height: 400px;
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: monospace;
+
+}
+.control-container{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+.control-container fieldset{
+	display: inline-block;
+	border: 5px solid black;
+
+}
+.control-container fieldset legend{
+	font-weight: bold;
+}
