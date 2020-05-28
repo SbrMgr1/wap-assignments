@@ -1,8 +1,9 @@
 var animating = "";
 var speed = 250;
+var cnt = 0;
 var doAnimation = function(animation_txt){
 	var animations = animation_txt.split("=====\n");
-	var cnt = 0;
+	
 	animating = setInterval(function(){
 
 		if(cnt >= animations.length){
