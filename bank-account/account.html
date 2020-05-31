@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>WAP assignments</title>
+	<base href="https://sbrmgr1.github.io/wap-assignments/">
+	<!-- <base href="file:///Users/samsherrana/Documents/Study Courses/5. WAP/wap-assignments/"> -->
+	<meta charset="utf-8" />
+	<meta name="description" content="Samsher's Bank Account assignment." />
+	<meta name="keywords" content="wap assignments" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="bank-account/assets/css/account.css">
+	<script type="text/javascript" src="bank-account/assets/js/account.js" async="async"></script>
+</head>
+<body id="here">
+	<h1 class="p-15">Bank Account Module</h1>
+	<div class="p-15 mb-15">
+		<div class="panel w-50">
+			<form id="create-acc-form" autocomplete="off">
+			<div class="mb-15">
+				<label for="acc-name">Account Name:</label>
+				<input id="acc-name" list="accounts" type="text" name="accName" required="required" pattern="^[A-Z][a-z ]+$" title="Only alphabets with capital letter at the begining." placeholder="Type account Name">
+				<datalist id="accounts">
+				  <option value="Saving">
+				  <option value="Checking">
+				  <option value="Business">
+				  <option value="Retirement">
+				</datalist>
+			</div>
+			<div class="mb-15">
+				<label for="acc-balance">Deposit:</label>
+				<input id="acc-balance" type="number" name="balance" required="required"  min="0.00" placeholder="Type amount to deposit">
+			</div>
+			<div class="mb-15">
+				<button class="btn-black" type="sybmit">Create new account</button>
+			</div>
+			<textarea rows="20" id="display-result" name="result" readonly></textarea>
+		</form>
+		</div>
+
+	</div>
+	<div class="p-15">
+		<p> 
+			<a href="https://validator.w3.org/check/referer"> 
+				<img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Validate" /> 
+			</a>
+		</p>
+
+	</div>
+</body>
+</html>

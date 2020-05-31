@@ -71,6 +71,9 @@
     padding: 8px;
     color: #000;
     border: 0;
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    cursor: pointer;
 }
 .btn-black{
 	display: inline-block;
@@ -80,6 +83,9 @@
     color: #fff;
     font-size: 14px;
     border: 0;
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    cursor: pointer;
 }
 .make-italic{
 	font-style: italic;

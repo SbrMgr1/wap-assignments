@@ -1,0 +1,28 @@
+textarea,input{
+	border: 1px solid gray !important;
+	border-radius: 5px;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+input:invalid {
+  border: 1px solid red !important;
+}
+textarea:focus,textarea:active, input:focus,input:active{
+	outline-offset: 0 ! important;
+	outline: 0;
+	box-shadow: 0 0 3px #00a20c ! important;
+	-webkit-box-shadow: 0 0 3px #00a20c ! important;
+	border: 1px solid #00a20c !important;
+}
+
+label{
+	font-weight: bold;
+	width: 100%;
+	display: inline-block;
+}
+.panel{
+	padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
