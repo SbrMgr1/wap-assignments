@@ -24,28 +24,28 @@
 				<legend class="my-legend">Personal details</legend>
 				<div  class="row mb-15 mt-15">
 					<div class="my-input w-50 float-left">
-						<label class="required">First Name</label>
-						<input type="text" name="first_name" placeholder="First Name" />
+						<label class="required" for="first-name">First Name</label>
+						<input type="text" id="first-name" name="first_name" placeholder="First Name" />
 					</div>
 					<div class="my-input w-50 float-left">
-						<label class="required">Last Name</label>
-						<input type="text" name="last_name" placeholder="Last Name" />
-					</div>
-				</div>
-				<div  class="row mb-15">
-					<div class="my-input w-50 float-left">
-						<label class="required">Email</label>
-						<input type="email" name="email" placeholder="Email" />
-					</div>
-					<div class="my-input w-50 float-left">
-						<label class="required">Phone No</label>
-						<input type="tel" name="phone" placeholder="Phone Number" />
+						<label class="required" for="last-name">Last Name</label>
+						<input type="text" id="last-name" name="last_name" placeholder="Last Name" />
 					</div>
 				</div>
 				<div  class="row mb-15">
 					<div class="my-input w-50 float-left">
-						<label class="required">Gender</label>
-						<select name="gender">
+						<label class="required" for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="Email" />
+					</div>
+					<div class="my-input w-50 float-left">
+						<label class="required" for="phone">Phone No</label>
+						<input type="tel" id="phone" name="phone" placeholder="Phone Number" />
+					</div>
+				</div>
+				<div  class="row mb-15">
+					<div class="my-input w-50 float-left">
+						<label class="required" for="gender">Gender</label>
+						<select name="gender" id="gender">
 							<option value="">Select Gender</option>
 							<option value="m">Male</option>
 							<option value="f">Female</option>
@@ -53,14 +53,14 @@
 						</select>
 					</div>
 					<div class="my-input w-50 float-left">
-						<label class="required">SSN</label>
-						<input type="text" name="ssn" placeholder="Social Security Number" />
+						<label class="required" for="ssn">SSN</label>
+						<input type="text" id="ssn" name="ssn" placeholder="Social Security Number" />
 					</div>
 				</div>
 				<div  class="row mb-30">
 					<div class="my-input w-50 float-left">
-						<label class="required">Date of birth</label>
-						<input type="date" name="dob" />
+						<label class="required" for="dob">Date of birth</label>
+						<input type="date" id="dob" name="dob" />
 					</div>
 				</div>
 			</fieldset>
@@ -68,22 +68,22 @@
 				<legend class="my-legend">Billing Address</legend>
 				<div  class="row mb-15 mt-15">
 					<div class="my-input w-50 float-left">
-						<label class="required">Street</label>
-						<input type="text" name="billing_street" placeholder="Street Address" />
+						<label class="required" for="bil-street">Street</label>
+						<input type="text" id="bil-street" name="billing_street" placeholder="Street Address" />
 					</div>
 					<div class="my-input w-50 float-left">
-						<label class="required">City</label>
-						<input type="text" name="billing_city" placeholder="City" />
+						<label class="required" for="bil-city">City</label>
+						<input type="text" id="bil-city" name="billing_city" placeholder="City" />
 					</div>
 				</div>
 				<div  class="row mb-30">
 					<div class="my-input w-50 float-left">
-						<label class="required">State</label>
-						<input type="text" name="billing_state" placeholder="State" />
+						<label class="required" for="bil-state">State</label>
+						<input type="text" id="bil-state" name="billing_state" placeholder="State" />
 					</div>
 					<div class="my-input w-50 float-left">
-						<label class="required">ZipCode</label>
-						<input type="text" name="billing_zipcode" placeholder="Zip Code" />
+						<label class="required" for="bil-zipcode">ZipCode</label>
+						<input type="text" id="bil-zipcode" name="billing_zipcode" placeholder="Zip Code" />
 					</div>
 				</div>
 			</fieldset>
@@ -91,22 +91,22 @@
 				<legend class="my-legend">Shipping Address</legend>
 				<div  class="row mb-15 mt-15">
 					<div class="my-input w-50 float-left">
-						<label class="required">Street</label>
-						<input type="text" name="shipping_street" placeholder="Street Address" />
+						<label class="required" for="ship-street">Street</label>
+						<input type="text" id="ship-street" name="shipping_street" placeholder="Street Address" />
 					</div>
 					<div class="my-input w-50 float-left">
-						<label class="required">City</label>
-						<input type="text" name="shipping_city" placeholder="City" />
+						<label class="required" for="ship-city">City</label>
+						<input type="text" id="ship-city" name="shipping_city" placeholder="City" />
 					</div>
 				</div>
 				<div  class="row mb-15">
 					<div class="my-input w-50 float-left">
-						<label class="required">State</label>
-						<input type="text" name="shipping_state" placeholder="State" />
+						<label class="required" for="ship-state">State</label>
+						<input type="text" id="ship-state" name="shipping_state" placeholder="State" />
 					</div>
 					<div class="my-input w-50 float-left">
-						<label class="required">ZipCode</label>
-						<input type="text" name="shipping_zipcode" placeholder="Zip Code" />
+						<label class="required" for=ship-zipcode>ZipCode</label>
+						<input type="text" id="ship-zipcode" name="shipping_zipcode" placeholder="Zip Code" />
 					</div>
 				</div>
 			</fieldset>
@@ -114,8 +114,8 @@
 				<legend class="my-legend">Payment Info</legend>
 				<div  class="row mb-15 mt-15">
 					<div class="my-input w-50 float-left">
-						<label class="required">Select Payment Info</label>
-						<select name="payment_info">
+						<label class="required" for="payment-info">Select Payment Info</label>
+						<select id="payment-info" name="payment_info">
 							<option value="card">By Credit Card</option>
 							<option value="check">By Visa Card</option>
 							<option value="cash">By Cash</option>
