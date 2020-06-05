@@ -4,9 +4,9 @@ $(function(){
 		$.ajax({
 			url:'assets/files/'+$(this).val(),
 			'type': 'GET'
-		});
-	}).done(ajaxSuccess)
-	.fail(ajaxFailure);
+		}).done(ajaxSuccess)
+		  .fail(ajaxFailure);
+	});
 
 	function ajaxSuccess(data) {
 		$('#output').val(data);
