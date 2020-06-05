@@ -14,6 +14,7 @@ $(function(){
 
 	function ajaxFailure(xhr, status, exception) {
 	  console.log(xhr, status, exception);
+	  $('#output').val('');
 	}
 	$.get('https://www.google.com/images/branding/product/ico/googleg_lodp.ico');
 })
