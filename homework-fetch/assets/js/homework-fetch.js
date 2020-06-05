@@ -1,6 +1,6 @@
 $(function(){
 	"user strict";
-	var host_url = 'http://jsonplaceholder.typicode.com';
+	var host_url = 'https://jsonplaceholder.typicode.com';
 
 	var displayUserInfo = function(userInfo){
 		$('#user-info-name').text(userInfo.name);
