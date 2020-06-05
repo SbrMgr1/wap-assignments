@@ -17,7 +17,7 @@ $(function(){
 			var titleHtml = $('<h3>').text(post.title);
 			var bodyHtml = $('<p>').text(post.body);
 			var commentHtml = $(`<button class="comment-btn">`).text('Comment...');
-			var commentContent = $(`<div class="comment-container">`).text('Comment container');
+			var commentContent = $(`<div class="comment-container">`);
 			postHtml.append(titleHtml);
 			postHtml.append(bodyHtml);
 			postHtml.append(commentHtml);
@@ -26,6 +26,16 @@ $(function(){
 		}
 		$('.post-info').slideDown();
 	};
+	var displayComments = function(commentBtn,comments){
+		var commentContainer = $(commentBtn).parents('.post').find('.comment-container');
+		for(var key in  comments){
+			var singleComment = comments[key];
+			var body = $('<p>').text(singleComment.body);
+			var commentedBy = $('<p>').text(`By: ${singleComment.name}`);
+			commentContainer.append(body)
+			commentContainer.append(commentedBy)
+		}
+	}
 
 	$('#get-user-form [name="userId"]').on('change',function(e){
 		$('.user-info').slideUp();
@@ -51,6 +61,12 @@ $(function(){
 		e.preventDefault();
 	})
 	$(document).on('click','.comment-btn',function(e){
-		console.log($(this).parents('.post').attr('data-key'))
+		var postId = $(this).parents('.post').attr('data-key');
+		var commentBtn = this;
+
+		fetch(`${host_url}/comments?postId=${postId}`) 
+		.then(function(resp) {
+			return resp.json();
+		}).then(comments=>displayComments(commentBtn,comments));
 	})
 })
