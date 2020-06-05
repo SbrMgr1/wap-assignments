@@ -1,6 +1,6 @@
 $(function(){
 	"use strict";
-	var request_url = 'file:///Users/samsherrana/Documents/Study%20Courses/5.%20WAP/wap-assignments/homework-ajax';
+	var request_url = 'https://sbrmgr1.github.io/wap-assignments/homework-ajax';
 	$('#file-name').on('change',function(e){
 		$.ajax({
 			url:request_url+'/assets/files/'+$(this).val(),
