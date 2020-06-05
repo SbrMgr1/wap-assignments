@@ -2,7 +2,7 @@ $(function(){
 	"use strict";
 	$('#file-name').on('change',function(e){
 		$.ajax({
-			url:'assets/files/'+$(this).val(),
+			url:'homework-ajax/assets/files/'+$(this).val(),
 			'type': 'GET'
 		}).done(ajaxSuccess)
 		  .fail(ajaxFailure);
