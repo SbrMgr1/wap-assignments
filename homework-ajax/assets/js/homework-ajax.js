@@ -3,11 +3,11 @@ $(function(){
 	$('#file-name').on('change',function(e){
 		$.ajax({
 			url:'assets/files/'+$(this).val(),
-			'type': 'GET',
-			'success': ajaxSuccess,
-			'error': ajaxFailure
-		})
-	})
+			'type': 'GET'
+		});
+	}).done(ajaxSuccess)
+	.fail(ajaxFailure);
+
 	function ajaxSuccess(data) {
 		$('#output').val(data);
 	}
